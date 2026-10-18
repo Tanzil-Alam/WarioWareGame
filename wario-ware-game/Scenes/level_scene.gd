@@ -39,6 +39,7 @@ func _process(delta: float) -> void:
 			garlic_4.hide()
 		0:
 			garlic_container.hide()
+			get_tree().change_scene_to_file("res://Scenes/death_screen.tscn")
 	
 	timer.text = str(snapped(time, 0.1))
 	level.text = "Level " + str(Global.minigames_done + 1)
